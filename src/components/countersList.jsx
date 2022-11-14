@@ -42,16 +42,19 @@ const CountersList = () => {
   }
 
   return <>
-    {counters.map(count => 
+    {counters.map(count =>
       <Counter key={count.id} {...count}
       onDelete={handleDelete}
       onIncrement={handleIncrement}
       onDecrement={handleDecrement}
       />)}
-      <button className="btn btn-primary byn-sm m-2" onClick={handleReset}>Сброс</button>
+      <button
+      className="btn btn-primary byn-sm m-2"
+      onClick={handleReset}>Сброс</button>
 
   </>
 }
+//*-- это бесполезный коммент, для создания новой ветки
 
 
 
